@@ -1,0 +1,21 @@
+{
+  "name": "atelier-cabeleireiros",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Denis Toledo <contato@denistoledo.com.br>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dnstld/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git"
+  }
+}
