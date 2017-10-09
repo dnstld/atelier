@@ -13,6 +13,7 @@ var gulp = require("gulp"),
 
     // js files
     scripts  = {
+      jquery: 'vendor/jquery/dist/jquery.js',
       main: 'assets/js/main.js'
     };
 
@@ -55,6 +56,7 @@ gulp.task('css', function() {
 // Concat and minify JS
 gulp.task('js', function() {
   return gulp.src([
+    scripts.jquery,
     scripts.main
   ])
     .pipe(concat('main.js'))
