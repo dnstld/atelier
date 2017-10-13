@@ -8,6 +8,7 @@ var Atelier = {
     'use strict';
 
     Atelier.menuControl();
+    Atelier.slideshow();
   },
 
   menuControl: function() {
@@ -50,10 +51,32 @@ var Atelier = {
   openedMenu: function() {
     'use strict';
 
-    console.log('----');
-
     Atelier.variables.menu.removeClass('opened');
-  }
+  },
+  slideshow: function() {
+    'use strict';
+
+    $('#slideshow-home').vegas({
+      slides: [
+        { src: '../assets/images/salao.jpg' },
+        { src: '../assets/images/salao2.jpg' },
+        { src: '../assets/images/salao3.jpg' },
+        { src: '../assets/images/salao4.jpg' },
+        { src: '../assets/images/salao5.jpg' },
+        { src: '../assets/images/salao6.jpg' },
+        { src: '../assets/images/salao7.jpg' },
+        { src: '../assets/images/salao8.jpg' },
+        { src: '../assets/images/salao9.jpg' },
+        { src: '../assets/images/salao10.jpg' },
+        { src: '../assets/images/salao11.jpg' },
+        { src: '../assets/images/salao12.jpg' },
+        { src: '../assets/images/salao13.jpg' },
+        { src: '../assets/images/salao14.jpg' },
+        { src: '../assets/images/salao15.jpg' }
+      ],
+      animation: 'kenburns'
+    });
+  },
 }
 
 $(document).ready(function() {

@@ -14,6 +14,7 @@ var gulp = require("gulp"),
     // js files
     scripts  = {
       jquery: 'vendor/jquery/dist/jquery.js',
+      vegas: 'vendor/vegas/dist/vegas.js',
       main: 'assets/js/main.js'
     };
 
@@ -57,6 +58,7 @@ gulp.task('css', function() {
 gulp.task('js', function() {
   return gulp.src([
     scripts.jquery,
+    scripts.vegas,
     scripts.main
   ])
     .pipe(concat('main.js'))

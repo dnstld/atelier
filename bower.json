@@ -17,6 +17,7 @@
   ],
   "devDependencies": {
     "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "vegas": "^2.4.0"
   }
 }
