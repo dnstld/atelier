@@ -16,8 +16,6 @@ var Atelier = {
 
     var viewport = $(window).width();
 
-    console.log('resize: ' + viewport);
-
     if (viewport < 900) {
       Atelier.openMenu();
       Atelier.closeMenu();

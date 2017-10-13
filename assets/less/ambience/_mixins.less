@@ -53,3 +53,42 @@
   box-shadow: none;
   white-space: nowrap;
 }
+
+.hgroup(@color: @color-primary, @border: @color-primary) {
+  text-align: center;
+  text-transform: uppercase;
+  color: @color;
+  border-bottom: 1px solid @border;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+
+  .for-tablet-portrait-up({
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  });
+  .for-tablet-landscape-up({
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  });
+  .for-desktop-up({
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+  });
+  .for-big-desktop-up({
+    margin-bottom: 3rem;
+    padding-bottom: 2.5rem;
+  });
+
+  > h2 {
+    font-size: @font-size-large;
+
+    .for-tablet-landscape-up({
+      font-size: @font-size-huge;
+      margin-top: .3rem;
+    });
+    .for-desktop-up({
+      font-size: @font-size-xhuge;
+      margin-top: .5rem;
+    });
+  }
+}

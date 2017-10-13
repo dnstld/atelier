@@ -1,0 +1,31 @@
+.welcome-home {
+  background-color: @color-secondary;
+
+  > .content {
+    &:extend(.centered-content);
+    text-align: center;
+
+    > .title {
+      .hgroup;
+    }
+    > .text {
+      max-width: 500px;
+      margin: 0 auto 1rem;
+
+      .for-tablet-landscape-up({
+        max-width: 750px;
+      });
+
+      > p {
+        margin-top: 1rem;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    > .btn {
+      .btn;
+    }
+  }
+}
