@@ -15,6 +15,7 @@ var gulp = require("gulp"),
     scripts  = {
       jquery: 'vendor/jquery/dist/jquery.js',
       vegas: 'vendor/vegas/dist/vegas.js',
+      slick: 'vendor/slick-carousel/slick/slick.js',
       main: 'assets/js/main.js'
     };
 
@@ -59,6 +60,7 @@ gulp.task('js', function() {
   return gulp.src([
     scripts.jquery,
     scripts.vegas,
+    scripts.slick,
     scripts.main
   ])
     .pipe(concat('main.js'))

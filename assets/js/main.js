@@ -9,6 +9,7 @@ var Atelier = {
 
     Atelier.menuControl();
     Atelier.slideshow();
+    Atelier.professionals();
   },
 
   menuControl: function() {
@@ -75,6 +76,37 @@ var Atelier = {
       animation: 'kenburns'
     });
   },
+  professionals: function() {
+    'use strict';
+
+    $('#list').slick({
+      lazyLoad: 'ondemand',
+      slidesToShow: 1,
+      infinite: true,
+      mobileFirst: true,
+      centerMode: true,
+      dots: true,
+      arrows: false,
+
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 3,
+            centerMode: false,
+            cssEase: 'linear',
+            arrows: true
+          }
+        }
+      ]
+    });
+  }
 }
 
 $(document).ready(function() {

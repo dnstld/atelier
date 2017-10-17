@@ -2,11 +2,109 @@
   > .content {
     &:extend(.centered-content);
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 
     > .title {
       .hgroup(@color-text, @color-text);
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
     > .swipe {
+      .list {
+        > .slick-prev,
+        > .slick-next {
+          &:extend(.alignY);
+          z-index: 10;
+          background: @color-primary;
+          padding: 1.5rem;
+          border-radius: 50%;
+
+          &::before {
+            &:extend(.alignXY);
+          }
+        }
+        > .slick-prev {
+          left: 0;
+        }
+        > .slick-next {
+          right: 0;
+        }
+        .item {
+          .box-sizing;
+          padding: 0 .5rem;
+
+          > .border {
+            border: 1px solid #979797;
+            display: block;
+            border-radius: 50%;
+            padding: .5rem;
+
+            > .photo {
+              display: block;
+              position: relative;
+              overflow: hidden;
+              border-radius: 50%;
+              width: 100%;
+
+              &::after {
+                content: "";
+                display: block;
+                float: left;
+                padding-top: 100%;
+              }
+              &::before {
+                content: "";
+                display: block;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+              }
+              &.mirian {
+                &::before {
+                  background-image: url(../images/atelier-cabeleireiros-mirian.jpg);
+                }
+              }
+            }
+            > .name {
+              &:extend(.alignX);
+              bottom: 2rem;
+              text-align: center;
+              color: #fff;
+              font-size: @font-size-huge;
+              text-shadow: 1px 1px rgba(0, 0, 0, .5);
+            }
+          }
+          > .description {
+            display: block;
+            margin: 1rem 0;
+          }
+          > .schedule {
+            display: block;
+            color: @color-primary;
+            margin-bottom: .5rem;
+          }
+          > .btn {
+            .icon(@icon-denis-toledo, 1.5);
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: @color-primary;
+            color: #fff;
+            margin: 0 auto;
+            position: relative;
+
+            &::before {
+              &:extend(.alignXY);
+            }
+          }
+        }
+      }
     }
   }
 }
