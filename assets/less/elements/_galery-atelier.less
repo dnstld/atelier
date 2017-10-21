@@ -1,0 +1,58 @@
+.galery-atelier {
+  > .content {
+    &:extend(.centered-content);
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 1rem;
+
+    > .title {
+      .hgroup(@color-text, @color-text);
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    > .swipe {
+      .list {
+        > .slick-prev,
+        > .slick-next {
+          &:extend(.alignY);
+          z-index: 10;
+          background: rgba(0, 0, 0, .5);
+          padding: 1.5rem;
+          border-radius: 50%;
+
+          &::before {
+            &:extend(.alignXY);
+          }
+        }
+        > .slick-prev {
+          .icon(@icon-arrow-left, 1.5);
+          left: 0;
+        }
+        > .slick-next {
+          .icon(@icon-arrow-right, 1.5);
+          right: 0;
+        }
+        > .slick-dots {
+          button::before {
+            font-size: 1rem;
+          }
+        }
+        .item {
+          .box-sizing;
+          padding: 0 .5rem;
+
+          > .border {
+            display: block;
+            padding: .5rem;
+
+            > .img {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
