@@ -8,7 +8,39 @@
     > .title {
       .hgroup;
     }
-    > .social {
+    > .contacts {
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      > .blocks {
+        display: block;
+        margin-top: 1rem;
+
+        .for-tablet-landscape-up({
+          width: 33.33%;
+          margin-top: 0;
+          float: left;
+          text-align: left;
+        });
+
+        &:first-child {
+          margin-top: 0;
+        }
+        > .title {
+          .icon(@icon-denis-toledo, 1.5);
+          display: block;
+          font-weight: bold;
+          margin-bottom: .5rem;
+
+          &::before {
+            margin-right: .5rem;
+          }
+        }
+        > .description {}
+      }
     }
   }
 }
