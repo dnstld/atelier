@@ -4,6 +4,93 @@
     {
       "icon": {
         "paths": [
+          "M243.2 512l492.8-512 44.8 44.8-448 467.2 448 467.2-44.8 44.8z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "arrow-left"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 13,
+        "id": 6,
+        "name": "arrow-left",
+        "prevSize": 32,
+        "code": 59654
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M780.8 512l-492.8 512-44.8-44.8 448-467.2-448-467.2 44.8-44.8z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "arrow-right"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 12,
+        "id": 5,
+        "name": "arrow-right",
+        "prevSize": 32,
+        "code": 59655
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M966.4 0h-908.8c-32 0-57.6 25.6-57.6 57.6v908.8c0 32 25.6 57.6 57.6 57.6h492.8v-396.8h-134.4v-153.6h134.4v-115.2c0-134.4 83.2-204.8 198.4-204.8 57.6 0 102.4 6.4 121.6 6.4v140.8h-83.2c-64 0-76.8 32-76.8 76.8v96h153.6l-19.2 153.6h-140.8v396.8h262.4c32 0 57.6-25.6 57.6-57.6v-908.8c0-32-25.6-57.6-57.6-57.6z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "facebook"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 11,
+        "id": 4,
+        "name": "facebook",
+        "prevSize": 32,
+        "code": 59656
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 2
+    },
+    {
+      "icon": {
+        "paths": [
           "M512 780.8l-512-492.8 44.8-44.8 467.2 448 467.2-448 44.8 44.8z"
         ],
         "attrs": [
@@ -28,7 +115,7 @@
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 0
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -60,7 +147,7 @@
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 1
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -89,7 +176,7 @@
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 2
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -118,7 +205,7 @@
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 3
+      "iconIdx": 6
     },
     {
       "icon": {

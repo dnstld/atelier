@@ -402,5 +402,4 @@ $(window).resize(function() {
   'use strict';
 
   Atelier.menuControl();
-  Atelier.slideshow();
 });
