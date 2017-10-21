@@ -33,8 +33,6 @@
           display: block;
           font-weight: bold;
           margin-bottom: .5rem;
-          padding-left: 1.5rem;
-          position: relative;
 
           &.clock {
             .icon(@icon-clock, 1);
@@ -46,8 +44,7 @@
             .icon(@icon-phone-ringing, 1);
           }
           &::before {
-            &:extend(.alignY);
-            left: 0;
+            margin-right: .5rem;
           }
         }
       }
