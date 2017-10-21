@@ -13,7 +13,7 @@ var gulp = require("gulp"),
 
     // js files
     scripts  = {
-      jquery: 'vendor/jquery/dist/jquery.js',
+      jquery: 'vendor/jQuery-EasyTabs/vendor/jquery-1.7.1.min.js',
       vegas: 'vendor/vegas/dist/vegas.js',
       slick: 'vendor/slick-carousel/slick/slick.js',
       hashchange: 'vendor/jQuery-EasyTabs/vendor/jquery.hashchange.min.js',

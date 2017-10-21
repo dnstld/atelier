@@ -2,13 +2,15 @@
   $nome = $_POST['name'];
   $email = $_POST['email'];
   $tel = $_POST['phone'];
+  $born = $_POST['born'];
 
-  $para = "contato@denistoledo.com.br";
+  $para = "rogersmuk@gmail.com";
   $assunto = "Cadastro promoções - Aniversariantes";
   $msg = "
     <b>Nome:</b> $nome<br />
     <b>E-mail:</b> $email<br />
     <b>Telefone:</b> $tel<br />
+    <b>Data de nascimento:</b> $born<br />
   ";
 
   $header = "From: $email \r\n";

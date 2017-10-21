@@ -185,14 +185,14 @@ var Atelier = {
             },
             success: function() {
               setTimeout(function() {
-                btnBirthday.addClass("sucesso").text("Obrigado pelo contato.");
+                btnBirthday.addClass("sucesso").text("Você está participanto");
 
                 setTimeout(function() {
                   btnBirthday.removeClass("sucesso").text("Enviar");
                 }, 2000);
               }, 2000);
 
-              $("#name, #email, #phone").val("");
+              $("#name, #email, #phone, #born").val("");
             },
             error: function(xhr, ajaxOptions, thrownError) {
               console.log(xhr.status);
@@ -278,7 +278,7 @@ var Atelier = {
             },
             success: function() {
               setTimeout(function() {
-                btnWomen.addClass("sucesso").text("Obrigado pelo contato.");
+                btnWomen.addClass("sucesso").text("Você está participanto");
 
                 setTimeout(function() {
                   btnWomen.removeClass("sucesso").text("Enviar");
@@ -371,7 +371,7 @@ var Atelier = {
             },
             success: function() {
               setTimeout(function() {
-                btnMonthly.addClass("sucesso").text("Obrigado pelo contato.");
+                btnMonthly.addClass("sucesso").text("Você está participanto");
 
                 setTimeout(function() {
                   btnBirthday.removeClass("sucesso").text("Enviar");

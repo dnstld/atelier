@@ -223,7 +223,7 @@
             <div class="promocoes">
               <div id="tabs" class="tabs">
                 <ul class='etabs'>
-                  <li class='tab'><a href="#aniversariantes">Aniversariantes</a></li>
+                  <li class='tab active'><a href="#aniversariantes">Aniversariantes</a></li>
                   <li class='tab'><a href="#dia-da-mulher">Dia da Mulher</a></li>
                   <li class='tab'><a href="#sorteio-mensal">Sorteio mensal</a></li>
                 </ul>
@@ -238,11 +238,11 @@
                       <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
                       <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
                       <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
-                      <button type="submit" id="btn-birthday" class="btn-birthday">Quero participar</button>
+                      <button type="submit" id="btn-birthday" class="btn btn-birthday">Quero participar</button>
                     </form>
                   </div>
                 </div>
-                <div id="dia-da-mulher">
+                <div id="dia-da-mulher" class="tab-container">
                   <div class="panel-container">
                     <div class="description">
                       <p>No dia do seu aniversário você ganha 10% de desconto em qualquer serviço do salão. Já imaginou fazer aquela tão desejada luzes no seu cabelo para comemorar uma data tão especial e ainda ganhar 20% de desconto.</p>
@@ -253,11 +253,11 @@
                       <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
                       <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
                       <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
-                      <button type="submit" id="btn-birthday" class="btn-birthday">Quero participar</button>
+                      <button type="submit" id="btn-women" class="btn btn-women">Quero participar</button>
                     </form>
                   </div>
                 </div>
-                <div id="sorteio-mensal">
+                <div id="sorteio-mensal" class="tab-container">
                   <div class="panel-container">
                     <div class="description">
                       <p>No dia do seu aniversário você ganha 10% de desconto em qualquer serviço do salão. Já imaginou fazer aquela tão desejada luzes no seu cabelo para comemorar uma data tão especial e ainda ganhar 20% de desconto.</p>
@@ -268,7 +268,7 @@
                       <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
                       <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
                       <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
-                      <button type="submit" id="btn-birthday" class="btn-birthday">Quero participar</button>
+                      <button type="submit" id="btn-monthly" class="btn btn-monthly">Quero participar</button>
                     </form>
                   </div>
                 </div>
@@ -306,7 +306,7 @@
     </div>
 
     <script src="node_modules/less/dist/less.min.js"></script>
-    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/jQuery-EasyTabs/vendor/jquery-1.7.1.min.js"></script>
     <script src="vendor/vegas/dist/vegas.js"></script>
     <script src="vendor/slick-carousel/slick/slick.js"></script>
     <script src="vendor/jQuery-EasyTabs/vendor/jquery.hashchange.min.js"></script>
