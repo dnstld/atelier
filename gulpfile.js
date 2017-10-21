@@ -16,6 +16,9 @@ var gulp = require("gulp"),
       jquery: 'vendor/jquery/dist/jquery.js',
       vegas: 'vendor/vegas/dist/vegas.js',
       slick: 'vendor/slick-carousel/slick/slick.js',
+      hashchange: 'vendor/jQuery-EasyTabs/vendor/jquery.hashchange.min.js',
+      easytabs: 'vendor/jQuery-EasyTabs/lib/jquery.easytabs.js',
+      validate: 'vendor/jquery-validation/dist/jquery.validate.js',
       main: 'assets/js/main.js'
     };
 
@@ -61,6 +64,9 @@ gulp.task('js', function() {
     scripts.jquery,
     scripts.vegas,
     scripts.slick,
+    scripts.hashchange,
+    scripts.easytabs,
+    scripts.validate,
     scripts.main
   ])
     .pipe(concat('main.js'))
@@ -121,8 +127,26 @@ gulp.task('favicon', function() {
     .pipe(gulp.dest('build/'))
 });
 
+// birthday form
+gulp.task('birthdayForm', function() {
+  return gulp.src('birthday.php')
+    .pipe(gulp.dest('build/'))
+});
+
+// monthly form
+gulp.task('monthlyForm', function() {
+  return gulp.src('monthly.php')
+    .pipe(gulp.dest('build/'))
+});
+
+// women form
+gulp.task('womenForm', function() {
+  return gulp.src('women.php')
+    .pipe(gulp.dest('build/'))
+});
+
 // default task
 gulp.task('default', ['serve']);
 
 // build task
-gulp.task('build', ['html', 'css', 'js', 'icon', 'svg', 'images', 'favicon']);
+gulp.task('build', ['html', 'css', 'js', 'icon', 'svg', 'images', 'favicon', 'birthdayForm', 'monthlyForm', 'womenForm']);

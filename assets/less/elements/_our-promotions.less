@@ -7,6 +7,92 @@
       .hgroup(@color-text, @color-text);
     }
     > .promocoes {
+      > .tabs {
+        .etabs {
+          margin: 0;
+          padding: 0;
+          text-align: left;
+
+          .tab {
+            display: block;
+            margin-bottom: .5rem;
+            text-align: center;
+
+            .for-tablet-landscape-up({
+              display: inline-block;
+              width: 25%;
+            });
+
+            a {
+              display: block;
+              padding: 0 10px;
+              outline: none;
+              background-color: @color-text;
+              color: #fff;
+              padding: 1rem;
+              text-decoration: none;
+              user-select: none;
+
+              &.active {
+                background-color: @color-tertiary;
+                color: @color-text;
+              }
+            }
+          }
+        }
+        .tab-container .panel-container {
+          padding: 1rem;
+
+          .for-tablet-landscape-up({
+            text-align: left;
+          });
+
+          > .description > p {
+            margin-top: 1rem;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+          > .form {
+            margin-top: 1rem;
+
+            .for-tablet-landscape-up({
+              width: 50%;
+            });
+
+            > .inputs {
+              .box-sizing;
+              display: block;
+              width: 100%;
+              padding: 1rem;
+              margin-top: .5rem;
+              font-size: @font-size-default;
+              border: 1px solid #979797;
+              border-radius: 5px;
+
+              &:first-child {
+                margin-top: 0;
+              }
+              &.errorClass {
+                font-size: @font-size-default;
+                border-color: #f00;
+                margin-bottom: 0;
+              }
+            }
+            > .errorClass {
+              color: #f00;
+              font-size: @font-size-minute;
+              text-align: left;
+              margin-bottom: 1rem;
+            }
+            > .btn-birthday {
+              .btn(@color-tertiary, @color-text);
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
     }
   }
 }

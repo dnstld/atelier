@@ -221,7 +221,58 @@
               <h2>Promoções</h2>
             </header>
             <div class="promocoes">
-              promocoes
+              <div id="tabs" class="tabs">
+                <ul class='etabs'>
+                  <li class='tab'><a href="#aniversariantes">Aniversariantes</a></li>
+                  <li class='tab'><a href="#dia-da-mulher">Dia da Mulher</a></li>
+                  <li class='tab'><a href="#sorteio-mensal">Sorteio mensal</a></li>
+                </ul>
+                <div id="aniversariantes" class="tab-container">
+                  <div class="panel-container">
+                    <div class="description">
+                      <p>No dia do seu aniversário você ganha 10% de desconto em qualquer serviço do salão. Já imaginou fazer aquela tão desejada luzes no seu cabelo para comemorar uma data tão especial e ainda ganhar 20% de desconto.</p>
+                      <p>Para não ficar de fora, deixe seu e-mail e sua data de nascimento que nós iremos te avisar com antecedência para você não perder essa oportunidade.</p>
+                    </div>
+                    <form method="post" id="birthday-form" class="form">
+                      <input type="text" name="name" id="name" class="inputs" placeholder="Nome">
+                      <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
+                      <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
+                      <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
+                      <button type="submit" id="btn-birthday" class="btn-birthday">Quero participar</button>
+                    </form>
+                  </div>
+                </div>
+                <div id="dia-da-mulher">
+                  <div class="panel-container">
+                    <div class="description">
+                      <p>No dia do seu aniversário você ganha 10% de desconto em qualquer serviço do salão. Já imaginou fazer aquela tão desejada luzes no seu cabelo para comemorar uma data tão especial e ainda ganhar 20% de desconto.</p>
+                      <p>Para não ficar de fora, deixe seu e-mail e sua data de nascimento que nós iremos te avisar com antecedência para você não perder essa oportunidade.</p>
+                    </div>
+                    <form method="post" id="women-form" class="form">
+                      <input type="text" name="name" id="name" class="inputs" placeholder="Nome">
+                      <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
+                      <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
+                      <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
+                      <button type="submit" id="btn-birthday" class="btn-birthday">Quero participar</button>
+                    </form>
+                  </div>
+                </div>
+                <div id="sorteio-mensal">
+                  <div class="panel-container">
+                    <div class="description">
+                      <p>No dia do seu aniversário você ganha 10% de desconto em qualquer serviço do salão. Já imaginou fazer aquela tão desejada luzes no seu cabelo para comemorar uma data tão especial e ainda ganhar 20% de desconto.</p>
+                      <p>Para não ficar de fora, deixe seu e-mail e sua data de nascimento que nós iremos te avisar com antecedência para você não perder essa oportunidade.</p>
+                    </div>
+                    <form method="post" id="monthly-form" class="form">
+                      <input type="text" name="name" id="name" class="inputs" placeholder="Nome">
+                      <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
+                      <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
+                      <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
+                      <button type="submit" id="btn-birthday" class="btn-birthday">Quero participar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -258,6 +309,9 @@
     <script src="vendor/jquery/dist/jquery.js"></script>
     <script src="vendor/vegas/dist/vegas.js"></script>
     <script src="vendor/slick-carousel/slick/slick.js"></script>
+    <script src="vendor/jQuery-EasyTabs/vendor/jquery.hashchange.min.js"></script>
+    <script src="vendor/jQuery-EasyTabs/lib/jquery.easytabs.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
