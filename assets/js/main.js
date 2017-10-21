@@ -79,7 +79,7 @@ var Atelier = {
   professionals: function() {
     'use strict';
 
-    $('#list').slick({
+    $('#list-proffessionals').slick({
       lazyLoad: 'ondemand',
       slidesToShow: 1,
       infinite: true,
@@ -99,6 +99,29 @@ var Atelier = {
           breakpoint: 900,
           settings: {
             slidesToShow: 3,
+            centerMode: false,
+            cssEase: 'linear',
+            arrows: true
+          }
+        }
+      ]
+    });
+
+    $('#list-galery').slick({
+      lazyLoad: 'ondemand',
+      slidesToShow: 1,
+      infinite: true,
+      mobileFirst: true,
+      centerMode: true,
+      dots: true,
+      arrows: false,
+      adaptiveHeight: true,
+
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
             centerMode: false,
             cssEase: 'linear',
             arrows: true
