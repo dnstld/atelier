@@ -19,6 +19,7 @@ var gulp = require("gulp"),
       hashchange: 'vendor/jQuery-EasyTabs/vendor/jquery.hashchange.min.js',
       easytabs: 'vendor/jQuery-EasyTabs/lib/jquery.easytabs.js',
       validate: 'vendor/jquery-validation/dist/jquery.validate.js',
+      scroll: 'vendor/jquery-smooth-scroll/jquery.smooth-scroll.js',
       main: 'assets/js/main.js'
     };
 
@@ -67,6 +68,7 @@ gulp.task('js', function() {
     scripts.hashchange,
     scripts.easytabs,
     scripts.validate,
+    scripts.scroll,
     scripts.main
   ])
     .pipe(concat('main.js'))

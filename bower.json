@@ -21,6 +21,7 @@
     "vegas": "^2.4.0",
     "slick-carousel": "https://github.com/kenwheeler/slick.git#^1.8.1",
     "jQuery-EasyTabs": "https://github.com/JangoSteve/jQuery-EasyTabs.git#^3.2.0",
-    "jquery-validation": "https://github.com/jquery-validation/jquery-validation.git#^1.17.0"
+    "jquery-validation": "https://github.com/jquery-validation/jquery-validation.git#^1.17.0",
+    "jquery-smooth-scroll": "https://github.com/kswedberg/jquery-smooth-scroll.git#^2.2.0"
   }
 }

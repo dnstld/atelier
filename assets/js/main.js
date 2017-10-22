@@ -136,18 +136,18 @@ var Atelier = {
     $('#tabs').easytabs();
   },
   birthdayValidation: function() {
-    "use strict";
+    'use strict';
 
-    var btnBirthday = $("#btn-birthday"),
-        birthdayForm = $("#birthday-form");
+    var btnBirthday = $('#btn-birthday'),
+        birthdayForm = $('#birthday-form');
 
     jQuery.validator.setDefaults({
-      errorClass: "errorClass",
-      errorElement: "div",
-      validClass: "validClass"
+      errorClass: 'errorClass',
+      errorElement: 'div',
+      validClass: 'validClass'
     });
 
-    btnBirthday.on("click", function() {
+    btnBirthday.on('click', function() {
       birthdayForm.validate({
         rules: {
           name: {
@@ -169,20 +169,20 @@ var Atelier = {
         },
         messages: {
           name: {
-            required: "Qual é seu nome?",
-            minlength: jQuery.validator.format("Ele deve conter no mínimo {0} caracteres.")
+            required: 'Qual é seu nome?',
+            minlength: jQuery.validator.format('Ele deve conter no mínimo {0} caracteres.')
           },
           email: {
-            required: "Qual é seu e-mail?",
-            email: "Por favor, insira um e-mail válido."
+            required: 'Qual é seu e-mail?',
+            email: 'Por favor, insira um e-mail válido.'
           },
           phone: {
-            required: "Qual é seu telefone?",
-            minlength: jQuery.validator.format("Mínimo {0} números.")
+            required: 'Qual é seu telefone?',
+            minlength: jQuery.validator.format('Mínimo {0} números.')
           },
           born: {
-            required: "Qual é sua data de nascimento?",
-            minlength: jQuery.validator.format("Mínimo {0} números.")
+            required: 'Qual é sua data de nascimento?',
+            minlength: jQuery.validator.format('Mínimo {0} números.')
           }
         },
         highlight: function(element, errorClass, validClass) {
@@ -195,27 +195,27 @@ var Atelier = {
           var dados = $(form).serialize();
 
           $.ajax({
-            type: "POST",
-            url: "birthday.php",
+            type: 'POST',
+            url: 'birthday.php',
             data: dados,
-            dataType: "text",
+            dataType: 'text',
             cache: false,
             beforeSend: function() {
-              btnBirthday.text("Enviando...");
+              btnBirthday.text('Enviando...');
             },
             complete: function() {
-              btnBirthday.text("Aguardando retorno...");
+              btnBirthday.text('Aguardando retorno...');
             },
             success: function() {
               setTimeout(function() {
-                btnBirthday.addClass("sucesso").text("Você está participanto");
+                btnBirthday.addClass('sucesso').text('Você está participanto');
 
                 setTimeout(function() {
-                  btnBirthday.removeClass("sucesso").text("Enviar");
+                  btnBirthday.removeClass('sucesso').text('Enviar');
                 }, 2000);
               }, 2000);
 
-              $("#name, #email, #phone, #born").val("");
+              $('#name, #email, #phone, #born').val('');
             },
             error: function(xhr, ajaxOptions, thrownError) {
               console.log(xhr.status);
@@ -229,18 +229,18 @@ var Atelier = {
     });
   },
   womenValidation: function() {
-    "use strict";
+    'use strict';
 
-    var btnWomen = $("#btn-women"),
-        womenForm = $("#women-form");
+    var btnWomen = $('#btn-women'),
+        womenForm = $('#women-form');
 
     jQuery.validator.setDefaults({
-      errorClass: "errorClass",
-      errorElement: "div",
-      validClass: "validClass"
+      errorClass: 'errorClass',
+      errorElement: 'div',
+      validClass: 'validClass'
     });
 
-    btnWomen.on("click", function() {
+    btnWomen.on('click', function() {
       womenForm.validate({
         rules: {
           name: {
@@ -262,20 +262,20 @@ var Atelier = {
         },
         messages: {
           name: {
-            required: "Qual é seu nome?",
-            minlength: jQuery.validator.format("Ele deve conter no mínimo {0} caracteres.")
+            required: 'Qual é seu nome?',
+            minlength: jQuery.validator.format('Ele deve conter no mínimo {0} caracteres.')
           },
           email: {
-            required: "Qual é seu e-mail?",
-            email: "Por favor, insira um e-mail válido."
+            required: 'Qual é seu e-mail?',
+            email: 'Por favor, insira um e-mail válido.'
           },
           phone: {
-            required: "Qual é seu telefone?",
-            minlength: jQuery.validator.format("Mínimo {0} números.")
+            required: 'Qual é seu telefone?',
+            minlength: jQuery.validator.format('Mínimo {0} números.')
           },
           born: {
-            required: "Qual é sua data de nascimento?",
-            minlength: jQuery.validator.format("Mínimo {0} números.")
+            required: 'Qual é sua data de nascimento?',
+            minlength: jQuery.validator.format('Mínimo {0} números.')
           }
         },
         highlight: function(element, errorClass, validClass) {
@@ -288,27 +288,27 @@ var Atelier = {
           var dados = $(form).serialize();
 
           $.ajax({
-            type: "POST",
-            url: "women.php",
+            type: 'POST',
+            url: 'women.php',
             data: dados,
-            dataType: "text",
+            dataType: 'text',
             cache: false,
             beforeSend: function() {
-              btnWomen.text("Enviando...");
+              btnWomen.text('Enviando...');
             },
             complete: function() {
-              btnWomen.text("Aguardando retorno...");
+              btnWomen.text('Aguardando retorno...');
             },
             success: function() {
               setTimeout(function() {
-                btnWomen.addClass("sucesso").text("Você está participanto");
+                btnWomen.addClass('sucesso').text('Você está participanto');
 
                 setTimeout(function() {
-                  btnWomen.removeClass("sucesso").text("Enviar");
+                  btnWomen.removeClass('sucesso').text('Enviar');
                 }, 2000);
               }, 2000);
 
-              $("#name, #email, #phone").val("");
+              $('#name, #email, #phone').val('');
             },
             error: function(xhr, ajaxOptions, thrownError) {
               console.log(xhr.status);
@@ -322,18 +322,18 @@ var Atelier = {
     });
   },
   monthlyValidation: function() {
-    "use strict";
+    'use strict';
 
-    var btnMonthly = $("#btn-monthly"),
-        monthlyForm = $("#monthly-form");
+    var btnMonthly = $('#btn-monthly'),
+        monthlyForm = $('#monthly-form');
 
     jQuery.validator.setDefaults({
-      errorClass: "errorClass",
-      errorElement: "div",
-      validClass: "validClass"
+      errorClass: 'errorClass',
+      errorElement: 'div',
+      validClass: 'validClass'
     });
 
-    btnMonthly.on("click", function() {
+    btnMonthly.on('click', function() {
       monthlyForm.validate({
         rules: {
           name: {
@@ -355,20 +355,20 @@ var Atelier = {
         },
         messages: {
           name: {
-            required: "Qual é seu nome?",
-            minlength: jQuery.validator.format("Ele deve conter no mínimo {0} caracteres.")
+            required: 'Qual é seu nome?',
+            minlength: jQuery.validator.format('Ele deve conter no mínimo {0} caracteres.')
           },
           email: {
-            required: "Qual é seu e-mail?",
-            email: "Por favor, insira um e-mail válido."
+            required: 'Qual é seu e-mail?',
+            email: 'Por favor, insira um e-mail válido.'
           },
           phone: {
-            required: "Qual é seu telefone?",
-            minlength: jQuery.validator.format("Mínimo {0} números.")
+            required: 'Qual é seu telefone?',
+            minlength: jQuery.validator.format('Mínimo {0} números.')
           },
           born: {
-            required: "Qual é sua data de nascimento?",
-            minlength: jQuery.validator.format("Mínimo {0} números.")
+            required: 'Qual é sua data de nascimento?',
+            minlength: jQuery.validator.format('Mínimo {0} números.')
           }
         },
         highlight: function(element, errorClass, validClass) {
@@ -381,27 +381,27 @@ var Atelier = {
           var dados = $(form).serialize();
 
           $.ajax({
-            type: "POST",
-            url: "monthly.php",
+            type: 'POST',
+            url: 'monthly.php',
             data: dados,
-            dataType: "text",
+            dataType: 'text',
             cache: false,
             beforeSend: function() {
-              btnMonthly.text("Enviando...");
+              btnMonthly.text('Enviando...');
             },
             complete: function() {
-              btnMonthly.text("Aguardando retorno...");
+              btnMonthly.text('Aguardando retorno...');
             },
             success: function() {
               setTimeout(function() {
-                btnMonthly.addClass("sucesso").text("Você está participanto");
+                btnMonthly.addClass('sucesso').text('Você está participanto');
 
                 setTimeout(function() {
-                  btnBirthday.removeClass("sucesso").text("Enviar");
+                  btnBirthday.removeClass('sucesso').text('Enviar');
                 }, 2000);
               }, 2000);
 
-              $("#name, #email, #phone").val("");
+              $('#name, #email, #phone').val('');
             },
             error: function(xhr, ajaxOptions, thrownError) {
               console.log(xhr.status);
@@ -413,7 +413,7 @@ var Atelier = {
         }
       });
     });
-  },
+  }
 }
 
 $(document).ready(function() {
