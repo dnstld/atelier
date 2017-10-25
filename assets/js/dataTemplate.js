@@ -11,7 +11,6 @@ function dinamicData_templateCardsItens() {
 
     return "<li class=\"cards-items\">"+
             "<h2 class=\"service-name\">[service]</h2>"+
-            "<span class=\"line-detail\"></span>"+
             "<p class=\"description\">[genre]</p>"+
             "<p class=\"value\">[value]</p>"+
         "</li>";

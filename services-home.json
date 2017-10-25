@@ -1,0 +1,66 @@
+[
+    {
+        "service" : "Corte",
+        "genre" : "Masculino",
+        "value": "R$ 35.00"
+    },
+    {
+        "service" : "Corte",
+        "genre" : "Feminino",
+        "value": "R$ 45.00"
+    },
+    {
+        "service" : "Corte infantil até 6 anos",
+        "genre" : "Unisex",
+        "value": "R$ 30.00"
+    },  
+    {
+        "service" : "Barba a partir",
+        "genre" : "Masculino",
+        "value": "R$ 20.00"
+    },
+
+
+    {
+        "service" : "Penteado apartir",
+        "genre" : "Feminino",
+        "value": "R$ 90.00"
+    },
+    {
+        "service" : "Maquiagem a partir",
+        "genre" : "Feminino",
+        "value": "R$ 70.00"
+    },
+    {
+        "service" : "Escova progressiva",
+        "genre" : "Unisex",
+        "value": "R$ 190.00"
+    },
+    {
+        "service" : "Mechas",
+        "genre" : "Unisex",
+        "value": "R$ 180.00"
+    },
+
+
+    {
+        "service" : "Pé",
+        "genre" : "Unisex",
+        "value": "R$ 22.00"
+    },
+    {
+        "service" : "Mão",
+        "genre" : "Unisex",
+        "value": "R$ 20.00"
+    },
+    {
+        "service" : "Limpeza de pele",
+        "genre" : "Unisex",
+        "value": "R$ 65.00"
+    },
+    {
+        "service" : "Sobrancelha",
+        "genre" : "Unisex",
+        "value": "R$ 20.00"
+    }
+]

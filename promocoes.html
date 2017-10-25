@@ -23,7 +23,7 @@
             <nav class="menu">
               <ul>
                 <li><a href="index.html">Página inicial</a></li>
-                <li><a href="o-atelir-html">O Atelier</a></li>
+                <li><a href="o-atelier.html">O Atelier</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="fotos.html">Fotos</a></li>
                 <li><a href="javascript:void(0)">Promoções</a></li>
@@ -137,7 +137,7 @@
               <h2>Fan Page</h2>
             </header>
             <div class="social">
-              social
+              <div class="fb-page" data-href="https://www.facebook.com/atelier.cabeleireiros/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/atelier.cabeleireiros/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/atelier.cabeleireiros/">Atelier Cabeleireiros Sonia Maria</a></blockquote></div>
             </div>
           </div>
         </div>
@@ -150,6 +150,8 @@
       </div>
     </div>
 
+    <div id="fb-root"></div>
+
     <script src="node_modules/less/dist/less.min.js"></script>
     <script src="vendor/jQuery-EasyTabs/vendor/jquery-1.7.1.min.js"></script>
     <script src="vendor/vegas/dist/vegas.js"></script>
@@ -157,6 +159,10 @@
     <script src="vendor/jQuery-EasyTabs/vendor/jquery.hashchange.min.js"></script>
     <script src="vendor/jQuery-EasyTabs/lib/jquery.easytabs.js"></script>
     <script src="vendor/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="assets/js/dataJson.js"></script>
+    <script src="assets/js/dataTemplate.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- script -->
+    <script>dinamicData("index.html","services-home.json");</script>
   </body>
 </html>

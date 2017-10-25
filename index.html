@@ -149,98 +149,7 @@
               <h3>Conheça nossos</h3>
               <h2>Planos e Serviços</h2>
             </header>
-            <div class="lists">
-              <ul class="list">
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-              </ul>
-              <ul class="list">
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-              </ul>
-              <ul class="list">
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-                <li class="item">
-                  <h2 class="title">
-                    Corte
-                  </h2>
-                  <span class="gender">Masculino</span>
-                  <span class="price">R$ 35,00</span>
-                </li>
-              </ul>
-            </div>
+            <div id="services-cards" class="services-cards"></div>
             <a href="servicos.html" class="more-prices-services">Mais planos e serviços</a>
           </div>
         </div>
@@ -343,7 +252,7 @@
               <h2>Fan Page</h2>
             </header>
             <div class="social">
-              social
+              <div class="fb-page" data-href="https://www.facebook.com/atelier.cabeleireiros/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/atelier.cabeleireiros/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/atelier.cabeleireiros/">Atelier Cabeleireiros Sonia Maria</a></blockquote></div>
             </div>
           </div>
         </div>
@@ -355,6 +264,8 @@
       </aside>
     </div>
 
+    <div id="fb-root"></div>
+
     <script src="node_modules/less/dist/less.min.js"></script>
     <script src="vendor/jQuery-EasyTabs/vendor/jquery-1.7.1.min.js"></script>
     <script src="vendor/vegas/dist/vegas.js"></script>
@@ -362,7 +273,10 @@
     <script src="vendor/jQuery-EasyTabs/vendor/jquery.hashchange.min.js"></script>
     <script src="vendor/jQuery-EasyTabs/lib/jquery.easytabs.js"></script>
     <script src="vendor/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="vendor/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
+    <script src="assets/js/dataJson.js"></script>
+    <script src="assets/js/dataTemplate.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- script -->
+    <script>dinamicData("index.html","services-home.json");</script>
   </body>
 </html>

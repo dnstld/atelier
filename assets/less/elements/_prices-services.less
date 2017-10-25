@@ -11,70 +11,78 @@
     > .title {
       .hgroup(@color-text, @color-text);
     }
-    > .lists {
-      > .list {
+    > .services-cards {
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      > .services-card {
+        &:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
         .box-sizing;
         background-color: @color-text;
         color: #fff;
-        padding: 1rem;
+        padding: 1.5rem;
         margin-top: 1rem;
 
-        .for-tablet-portrait-up({
-          width: calc(~"50% - 2rem");
-          float: left;
-          margin: 1rem;
-          margin-top: 0;
-        });
         .for-tablet-landscape-up({
           width: calc(~"33% - 2rem");
+          float: left;
+          margin: 0 1rem 1rem 1rem;
         });
 
         &:first-child {
           margin-top: 0;
         }
-        > .item {
-          margin-top: 2rem;
+        > .card-list {
+          > .cards-items {
+            margin-top: 2rem;
 
-          &:first-child {
-            margin-top: 0;
-          }
-          > .title {
-            text-transform: uppercase;
-            border-bottom: 2px dotted @color-primary;
-            padding-bottom: .5rem;
-            position: relative;
-            font-size: @font-size-medium;
+            &:first-child {
+              margin-top: 0;
+            }
+            > .service-name {
+              text-transform: uppercase;
+              border-bottom: 2px dotted @color-primary;
+              padding-bottom: .5rem;
+              position: relative;
+              font-size: @font-size-medium;
 
-            &::before,
-            &::after {
-              content: "";
+              &::before,
+              &::after {
+                content: "";
+                display: block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: @color-primary;
+                position: absolute;
+                bottom: -3px;
+              }
+              &::before {
+                left: 0;
+              }
+              &::after {
+                right: 0;
+              }
+            }
+            > .description,
+            > .value {
               display: block;
-              width: 6px;
-              height: 6px;
-              border-radius: 50%;
-              background-color: @color-primary;
-              position: absolute;
-              bottom: -3px;
             }
-            &::before {
-              left: 0;
+            > .description {
+              font-size: @font-size-tiny;
+              opacity: .4;
+              margin-top: .5rem;
+              margin-bottom: .5rem;
             }
-            &::after {
-              right: 0;
+            > .value {
+              font-size: @font-size-medium;
             }
-          }
-          > .gender,
-          > .price {
-            display: block;
-          }
-          > .gender {
-            font-size: @font-size-tiny;
-            opacity: .4;
-            margin-top: .5rem;
-            margin-bottom: .5rem;
-          }
-          > .price {
-            font-size: @font-size-medium;
           }
         }
       }
