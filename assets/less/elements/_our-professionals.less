@@ -125,10 +125,23 @@
             display: block;
             margin: 1rem 0;
           }
-          > .schedule {
+          > .schedule-desktop,
+          > .schedule-mobile {
             display: block;
             color: @color-primary;
             margin-bottom: .5rem;
+          }
+          > .schedule-mobile {
+            .for-tablet-portrait-up({
+              display: none;
+            });
+          }
+          > .schedule-desktop {
+            display: none;
+
+            .for-tablet-portrait-up({
+              display: block;
+            });
           }
           > .btn {
             .icon(@icon-arrow-down, 1.5);

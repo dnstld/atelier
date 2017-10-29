@@ -47,6 +47,18 @@
             margin-right: .5rem;
           }
         }
+        > .description > .phone-desktop {
+          display: none;
+
+          .for-tablet-portrait-up({
+            display: block;
+          });
+        }
+        > .description > .phone-mobile {
+          .for-tablet-portrait-up({
+            display: none;
+          });
+        }
       }
     }
   }

@@ -11,26 +11,34 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="main">
+    <div class="main" id="main">
       <div class="content">
         <header class="main-header">
-          <img src="assets/images/atelier-cabeleireiros-logo.png" class="logo" alt="Imagem do logo">
-          <a href="" class="open" id="open"></a>
-
-          <div class="navigations" id="navigations">
-            <a href="" class="close" id="close"></a>
-            <span class="title">Menu</span>
-            <nav class="menu">
-              <ul>
-                <li><a href="index.html">Página inicial</a></li>
-                <li><a href="o-atelier.html">O Atelier</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="javascript:void(0)">Fotos</a></li>
-                <li><a href="promocoes.html">Promoções</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </nav>
-            <aside class="social">
+          <div class="content">
+            <a href="index.html" class="link-logo">
+              <img src="assets/images/atelier-cabeleireiros-logo.png" class="logo" alt="Imagem do logo">
+            </a>
+            <a href="" class="open" id="open"></a>
+            <div class="navigations" id="navigations">
+              <a href="" class="close" id="close"></a>
+              <span class="title">Menu</span>
+              <nav class="menu">
+                <ul>
+                  <li><a href="index.html">Página inicial</a></li>
+                  <li><a href="o-atelier.html">O Atelier</a></li>
+                  <li><a href="servicos.html">Serviços</a></li>
+                  <li><a href="javascript:void(0)">Fotos</a></li>
+                  <li><a href="promocoes.html">Promoções</a></li>
+                  <li><a href="#contato" id="btn-contact">Contato</a></li>
+                </ul>
+              </nav>
+              <aside class="social-mobile">
+                <ul>
+                  <li><a href="https://www.facebook.com/atelier.cabeleireiros/" target="blank"></a></li>
+                </ul>
+              </aside>
+            </div>
+            <aside class="social-desktop">
               <ul>
                 <li><a href="https://www.facebook.com/atelier.cabeleireiros/" target="blank"></a></li>
               </ul>
@@ -88,7 +96,8 @@
               <div class="blocks">
                 <span class="title phone">Telefone:</span>
                 <span class="description">
-                  <p>(15) 98818-8529</p>
+                  <a href="tel:015988188529" class="phone-mobile">(15) 98818-8529</a>
+                  <p class="phone-desktop">(15) 98818-8529</p>
                   <p>(15) 3211-8236</p>
                 </span>
               </div>

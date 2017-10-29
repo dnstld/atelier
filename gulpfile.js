@@ -152,8 +152,14 @@ gulp.task('womenForm', function() {
 });
 
 // services
-gulp.task('services', function() {
+gulp.task('servicesHome', function() {
   return gulp.src('services-home.json')
+    .pipe(gulp.dest('build/'))
+});
+
+// services
+gulp.task('services', function() {
+  return gulp.src('services.json')
     .pipe(gulp.dest('build/'))
 });
 
@@ -161,4 +167,4 @@ gulp.task('services', function() {
 gulp.task('default', ['serve']);
 
 // build task
-gulp.task('build', ['html', 'css', 'js', 'icon', 'svg', 'images', 'favicon', 'birthdayForm', 'monthlyForm', 'womenForm', 'services']);
+gulp.task('build', ['html', 'css', 'js', 'icon', 'svg', 'images', 'favicon', 'birthdayForm', 'monthlyForm', 'womenForm', 'servicesHome', 'services']);

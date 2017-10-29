@@ -11,26 +11,34 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="main">
+    <div class="main" id="main">
       <div class="content">
         <header class="main-header">
-          <img src="assets/images/atelier-cabeleireiros-logo.png" class="logo" alt="Imagem do logo">
-          <a href="" class="open" id="open"></a>
-
-          <div class="navigations" id="navigations">
-            <a href="" class="close" id="close"></a>
-            <span class="title">Menu</span>
-            <nav class="menu">
-              <ul>
-                <li><a href="index.html">Página inicial</a></li>
-                <li><a href="javascript:void(0)">O Atelier</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-                <li><a href="promocoes.html">Promoções</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </nav>
-            <aside class="social">
+          <div class="content">
+            <a href="index.html" class="link-logo">
+              <img src="assets/images/atelier-cabeleireiros-logo.png" class="logo" alt="Imagem do logo">
+            </a>
+            <a href="" class="open" id="open"></a>
+            <div class="navigations" id="navigations">
+              <a href="" class="close" id="close"></a>
+              <span class="title">Menu</span>
+              <nav class="menu">
+                <ul>
+                  <li><a href="index.html">Página inicial</a></li>
+                  <li><a href="javascript:void(0)">O Atelier</a></li>
+                  <li><a href="servicos.html">Serviços</a></li>
+                  <li><a href="fotos.html">Fotos</a></li>
+                  <li><a href="promocoes.html">Promoções</a></li>
+                  <li><a href="#contato" id="btn-contact">Contato</a></li>
+                </ul>
+              </nav>
+              <aside class="social-mobile">
+                <ul>
+                  <li><a href="https://www.facebook.com/atelier.cabeleireiros/" target="blank"></a></li>
+                </ul>
+              </aside>
+            </div>
+            <aside class="social-desktop">
               <ul>
                 <li><a href="https://www.facebook.com/atelier.cabeleireiros/" target="blank"></a></li>
               </ul>
@@ -40,7 +48,6 @@
         <div class="pages-cover o-atelier"></div>
         <div class="about-atelier">
           <div class="content">
-            <img src="assets/images/atelier-cabeleireiros-logo.png" alt="Logo Atelier Cabeleireiros" class="logo">
             <div class="text">
               <p>Atendemos o público masculino e feminino, a fim de oferecer um serviço diferenciado não só pelo conforto e atendimento, o Salão de Cabeleireiros Atelier garante 100% de satisfação dos serviços realizados.</p>
               <p>Adquirido em 2008 pelo cabeleireiro João Paulo, o salão está localizado no Carrefour Sonia Maria, na zona norte da cidade e é referência em estética e cortes masculinos e femininos.</p>
@@ -60,27 +67,122 @@
               <ul class="list" id="list-galery">
                 <li class="item">
                   <span class="border">
-                    <img src="assets/images/salao.jpg" class="img" alt="">
+                    <img src="assets/images/salao/salao-01.jpg" class="img" alt="">
                   </span>
                 </li>
                 <li class="item">
                   <span class="border">
-                    <img src="assets/images/salao8.jpg" class="img" alt="">
+                    <img src="assets/images/salao/salao-02.jpg" class="img" alt="">
                   </span>
                 </li>
                 <li class="item">
                   <span class="border">
-                    <img src="assets/images/salao3.jpg" class="img" alt="">
+                    <img src="assets/images/salao/salao-03.jpg" class="img" alt="">
                   </span>
                 </li>
                 <li class="item">
                   <span class="border">
-                    <img src="assets/images/salao4.jpg" class="img" alt="">
+                    <img src="assets/images/salao/salao-04.jpg" class="img" alt="">
                   </span>
                 </li>
                 <li class="item">
                   <span class="border">
-                    <img src="assets/images/salao5.jpg" class="img" alt="">
+                    <img src="assets/images/salao/salao-05.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-06.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-07.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-08.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-09.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-10.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-11.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-12.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-13.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-14.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-15.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-16.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-17.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-18.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-19.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-20.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-21.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-22.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-23.jpg" class="img" alt="">
+                  </span>
+                </li>
+                <li class="item">
+                  <span class="border">
+                    <img src="assets/images/salao/salao-24.jpg" class="img" alt="">
                   </span>
                 </li>
               </ul>
@@ -111,7 +213,8 @@
               <div class="blocks">
                 <span class="title phone">Telefone:</span>
                 <span class="description">
-                  <p>(15) 98818-8529</p>
+                  <a href="tel:015988188529" class="phone-mobile">(15) 98818-8529</a>
+                  <p class="phone-desktop">(15) 98818-8529</p>
                   <p>(15) 3211-8236</p>
                 </span>
               </div>

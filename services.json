@@ -1,0 +1,242 @@
+[
+    {
+        "service" : "Coloração",
+        "genre" : "masculino",
+        "value": "R$ 70.00"
+    },
+    {
+        "service" : "Corte",
+        "genre" : "Feminino",
+        "value": "R$ 45.00"
+    },
+    {
+        "service" : "Corte",
+        "genre" : "Masculino",
+        "value": "R$ 35.00"
+    },
+    {
+        "service" : "Corte infantil até 6 anos",
+        "genre" : "Unisex",
+        "value": "R$ 30.00"
+    },
+    {
+        "service" : "Hidratação argila branca",
+        "genre" : "Unisex",
+        "value": "R$ 90.00"
+    },
+    {
+        "service" : "Penteado apartir",
+        "genre" : "Feminino",
+        "value": "R$ 90.00"
+    },
+    {
+        "service" : "Maquiagem a partir",
+        "genre" : "Feminino",
+        "value": "R$ 70.00"
+    },
+    {
+        "service" : "Maquiagem a partir",
+        "genre" : "Feminino",
+        "value": "R$ 70.00"
+    },
+    {
+        "service" : "Escova progressiva",
+        "genre" : "Unisex",
+        "value": "R$ 190.00"
+    },
+    {
+        "service" : "Escova progressiva",
+        "genre" : "Unisex",
+        "value": "R$ 190.00"
+    },
+    {
+        "service" : "Mechas",
+        "genre" : "Unisex",
+        "value": "R$ 180.00"
+    },
+    {
+        "service" : "Pé",
+        "genre" : "Unisex",
+        "value": "R$ 22.00"
+    },
+    {
+        "service" : "Mão",
+        "genre" : "Unisex",
+        "value": "R$ 20.00"
+    },
+    {
+        "service" : "Sobrancelha",
+        "genre" : "Unisex",
+        "value": "R$ 20.00"
+    },
+    {
+        "service" : "Luzes e relaxamento",
+        "genre" : "Masculino",
+        "value": "R$ 70.00"
+    },
+    {
+        "service" : "Botox a partir",
+        "genre" : "Unisex",
+        "value": "R$ 160.00"
+    },
+    {
+        "service" : "Botox a partir",
+        "genre" : "Unisex",
+        "value": "R$ 160.00"
+    },
+    {
+        "service" : "Botox a partir",
+        "genre" : "Unisex",
+        "value": "R$ 160.00"
+    },
+    {
+        "service" : "Pezinho",
+        "genre" : "Masculino",
+        "value": "R$ 15.00"
+    },
+    {
+        "service" : "Coloração nutritiva a partir",
+        "genre" : "Unisex",
+        "value": "R$ 160.00"
+    },
+    {
+        "service" : "Hidratação a partir",
+        "genre" : "Unisex",
+        "value": "R$ 60.00"
+    },
+    {
+        "service" : "Aplicação",
+        "genre" : "Feminino",
+        "value": "R$ 60.00"
+    },
+    {
+        "service" : "Tonalizador a partir",
+        "genre" : "Unisex",
+        "value": "R$ 70.00"
+    },
+    {
+        "service" : "Cauterização quente",
+        "genre" : "Unisex",
+        "value": "R$ 130.00"
+    },
+    {
+        "service" : "Cauterização fria",
+        "genre" : "Unisex",
+        "value": "R$ 90.00"
+    },
+    {
+        "service" : "Escova",
+        "genre" : "Unisex",
+        "value": "R$ 35.00"
+    },
+    {
+        "service" : "Corte mais escova",
+        "genre" : "Unisex",
+        "value": "R$ 60.00"
+    },
+    {
+        "service" : "Escova definitiva a partir",
+        "genre" : "Feminino",
+        "value": "R$ 290.00"
+    },
+    {
+        "service" : "Unha porcelana",
+        "genre" : "Feminino",
+        "value": "R$ 140.00"
+    },
+    {
+        "service" : "Limpeza pele",
+        "genre" : "Unisex",
+        "value": "R$ 65.00"
+    },
+    {
+        "service" : "Massagem cada sessão",
+        "genre" : "Unisex",
+        "value": "R$ 45.00"
+    },
+    {
+        "service" : "Buço",
+        "genre" : "Feminino",
+        "value": "R$ 12.00"
+    },
+    {
+        "service" : "Buço longo",
+        "genre" : "Feminino",
+        "value": "R$ 20.00"
+    },
+    {
+        "service" : "Axila",
+        "genre" : "Unisex",
+        "value": "R$ 15.00"
+    },
+    {
+        "service" : "Virilha",
+        "genre" : "Feminino",
+        "value": "R$ 40.00"
+    },
+    {
+        "service" : "Virilha longa",
+        "genre" : "Unisex",
+        "value": "R$ 45.00"
+    },
+    {
+        "service" : "Meia perna",
+        "genre" : "Unisex",
+        "value": "R$ 20.00"
+    },
+    {
+        "service" : "Perna inteira",
+        "genre" : "Unisex",
+        "value": "R$ 35.00"
+    },
+    {
+        "service" : "Barba apartir",
+        "genre" : "Masculino",
+        "value": "R$ 35.00"
+    },
+    {
+        "service" : "Nariz",
+        "genre" : "Unisex",
+        "value": "R$ 8.00"
+    },
+    {
+        "service" : "Orelha",
+        "genre" : "Unisex",
+        "value": "R$ 8.00"
+    },
+    {
+        "service" : "Peito a partir",
+        "genre" : "Unisex",
+        "value": "R$ 35.00"
+    },
+    {
+        "service" : "Costas a partir",
+        "genre" : "Unisex",
+        "value": "R$ 35.00"
+    },
+    {
+        "service" : "Coxa",
+        "genre" : "Unisex",
+        "value": "R$ 20.00"
+    },
+    {
+        "service" : "Escova definitiva",
+        "genre" : "Masculino",
+        "value": "R$ 120.00"
+    },
+    {
+        "service" : "Selagem capilar",
+        "genre" : "Unisex",
+        "value": "R$ 140.00"
+    },
+    {
+        "service" : "Tratamento lavatório Aneethun a partir",
+        "genre" : "Unisex",
+        "value": "R$ 60.00"
+    },
+    {
+        "service" : "Tratamento Aneethun + escova a partir",
+        "genre" : "Unisex",
+        "value": "R$ 80.00"
+    }
+]

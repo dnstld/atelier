@@ -15,6 +15,7 @@ var Atelier = {
     Atelier.monthlyValidation();
     Atelier.womenValidation();
     Atelier.facebook();
+    Atelier.linkContact();
   },
   menuControl: function() {
     'use strict';
@@ -52,6 +53,30 @@ var Atelier = {
     'use strict';
 
     Atelier.variables.menu.removeClass('opened');
+  },
+  linkContact: function() {
+    'use strict';
+
+    var btnContact = $('#btn-contact');
+
+    btnContact.on('click', function() {
+      Atelier.variables.menu.removeClass('opened');
+
+      $('#main').animate({
+          scrollTop: $("#contato").offset().top
+      }, 1500);
+      return false;
+    });
+  },
+  closeMenu: function() {
+    'use strict';
+
+    var btnClose = $('#close');
+
+    btnClose.on('click', function() {
+      Atelier.variables.menu.removeClass('opened');
+      return false;
+    });
   },
   slideshow: function() {
     'use strict';
@@ -122,7 +147,7 @@ var Atelier = {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             centerMode: false,
             cssEase: 'linear',
             arrows: true

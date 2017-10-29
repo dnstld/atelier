@@ -18,21 +18,23 @@
         clear: both;
       }
       > .services-card {
-        &:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
         .box-sizing;
         background-color: @color-text;
         color: #fff;
         padding: 1.5rem;
         margin-top: 1rem;
 
+        &:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
         .for-tablet-landscape-up({
           width: calc(~"33% - 2rem");
-          float: left;
+          display: inline-block;
           margin: 0 1rem 1rem 1rem;
+          vertical-align: top;
         });
 
         &:first-child {
