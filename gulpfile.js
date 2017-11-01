@@ -20,6 +20,7 @@ var gulp = require("gulp"),
       easytabs: 'vendor/jQuery-EasyTabs/lib/jquery.easytabs.js',
       validate: 'vendor/jquery-validation/dist/jquery.validate.js',
       scroll: 'vendor/jquery-smooth-scroll/jquery.smooth-scroll.js',
+      mask: 'vendor/jquery-mask-plugin/dist/jquery.mask.js',
       dataJson: 'assets/js/dataJson.js',
       dataTemplate: 'assets/js/dataTemplate.js',
       main: 'assets/js/main.js'
@@ -71,6 +72,7 @@ gulp.task('js', function() {
     scripts.easytabs,
     scripts.validate,
     scripts.scroll,
+    scripts.mask,
     scripts.dataJson,
     scripts.dataTemplate,
     scripts.main
@@ -133,25 +135,13 @@ gulp.task('favicon', function() {
     .pipe(gulp.dest('build/'))
 });
 
-// birthday form
-gulp.task('birthdayForm', function() {
-  return gulp.src('birthday.php')
+// email
+gulp.task('email', function() {
+  return gulp.src('processa.php')
     .pipe(gulp.dest('build/'))
 });
 
-// monthly form
-gulp.task('monthlyForm', function() {
-  return gulp.src('monthly.php')
-    .pipe(gulp.dest('build/'))
-});
-
-// women form
-gulp.task('womenForm', function() {
-  return gulp.src('women.php')
-    .pipe(gulp.dest('build/'))
-});
-
-// services
+// servicesHome
 gulp.task('servicesHome', function() {
   return gulp.src('services-home.json')
     .pipe(gulp.dest('build/'))
@@ -167,4 +157,4 @@ gulp.task('services', function() {
 gulp.task('default', ['serve']);
 
 // build task
-gulp.task('build', ['html', 'css', 'js', 'icon', 'svg', 'images', 'favicon', 'birthdayForm', 'monthlyForm', 'womenForm', 'servicesHome', 'services']);
+gulp.task('build', ['html', 'css', 'js', 'icon', 'svg', 'images', 'favicon', 'email', 'servicesHome', 'services']);

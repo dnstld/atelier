@@ -69,7 +69,8 @@
                       <input type="text" name="name" id="name" class="inputs" placeholder="Nome">
                       <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
                       <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
-                      <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
+                      <input type="text" name="born" id="born" class="inputs input-born" placeholder="Data de nascimento">
+                      <input type=hidden name="type" value="Aniversariantes">
                       <button type="submit" id="btn-birthday" class="btn btn-birthday">Quero participar</button>
                     </form>
                   </div>
@@ -84,7 +85,8 @@
                       <input type="text" name="name" id="name" class="inputs" placeholder="Nome">
                       <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
                       <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
-                      <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
+                      <input type="text" name="born" id="born" class="inputs input-born" placeholder="Data de nascimento">
+                      <input type=hidden name="type" value="Sorteio mensal">
                       <button type="submit" id="btn-monthly" class="btn btn-monthly">Quero participar</button>
                     </form>
                   </div>
@@ -98,7 +100,8 @@
                       <input type="text" name="name" id="name" class="inputs" placeholder="Nome">
                       <input type="email" name="email" id="email" class="inputs" placeholder="E-mail">
                       <input type="tel" name="phone" id="phone" class="inputs" placeholder="Celular">
-                      <input type="text" name="born" id="born" class="inputs" placeholder="Data de nascimento">
+                      <input type="text" name="born" id="born" class="inputs input-born" placeholder="Data de nascimento">
+                      <input type=hidden name="type" value="Dia da Mulher">
                       <button type="submit" id="btn-women" class="btn btn-women">Quero participar</button>
                     </form>
                   </div>
@@ -151,7 +154,7 @@
           </div>
         </div>
       </div>
-      <div class="fill-page"></div>
+      <div class="fill-page promocoes"></div>
         <aside class="copy-right">
           <span>Copyright &copy; 2017 Atelier Cabeleireiros &bull; Todos os direitos reservados</span>
           <span>Desenvolvido por <a href="http://chefdesign.com.br/" target="_blank">ChefDesign</a></span>
@@ -168,6 +171,7 @@
     <script src="vendor/jQuery-EasyTabs/vendor/jquery.hashchange.min.js"></script>
     <script src="vendor/jQuery-EasyTabs/lib/jquery.easytabs.js"></script>
     <script src="vendor/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="vendor/jquery-mask-plugin/dist/jquery.mask.js"></script>
     <script src="assets/js/dataJson.js"></script>
     <script src="assets/js/dataTemplate.js"></script>
     <script src="assets/js/main.js"></script>

@@ -16,6 +16,7 @@ var Atelier = {
     Atelier.womenValidation();
     Atelier.facebook();
     Atelier.linkContact();
+    Atelier.mask();
   },
   menuControl: function() {
     'use strict';
@@ -83,21 +84,13 @@ var Atelier = {
 
     $('#slideshow-home').vegas({
       slides: [
-        { src: '../assets/images/salao.jpg' },
-        { src: '../assets/images/salao2.jpg' },
-        { src: '../assets/images/salao3.jpg' },
-        { src: '../assets/images/salao4.jpg' },
-        { src: '../assets/images/salao5.jpg' },
-        { src: '../assets/images/salao6.jpg' },
-        { src: '../assets/images/salao7.jpg' },
-        { src: '../assets/images/salao8.jpg' },
-        { src: '../assets/images/salao9.jpg' },
-        { src: '../assets/images/salao10.jpg' },
-        { src: '../assets/images/salao11.jpg' },
-        { src: '../assets/images/salao12.jpg' },
-        { src: '../assets/images/salao13.jpg' },
-        { src: '../assets/images/salao14.jpg' },
-        { src: '../assets/images/salao15.jpg' }
+        { src: '../assets/images/salao/salao-24.jpg' },
+        { src: '../assets/images/salao/salao-09.jpg' },
+        { src: '../assets/images/salao/salao-08.jpg' },
+        { src: '../assets/images/salao/salao-12.jpg' },
+        { src: '../assets/images/salao/salao-13.jpg' },
+        { src: '../assets/images/salao/salao-20.jpg' },
+        { src: '../assets/images/salao/salao-23.jpg' }
       ],
       animation: 'kenburns'
     });
@@ -190,25 +183,24 @@ var Atelier = {
           },
           born: {
             required: true,
-            minlength: 4
+            minlength: 8
           }
         },
         messages: {
           name: {
-            required: 'Qual é seu nome?',
-            minlength: jQuery.validator.format('Ele deve conter no mínimo {0} caracteres.')
+            required: 'Por favor, coloque seu nome.',
+            minlength: jQuery.validator.format('Seu nome deve consistir pelo menos {0} caracteres.')
           },
           email: {
-            required: 'Qual é seu e-mail?',
-            email: 'Por favor, insira um e-mail válido.'
+            required: 'Por favor, coloque um email válido!',
           },
           phone: {
-            required: 'Qual é seu telefone?',
-            minlength: jQuery.validator.format('Mínimo {0} números.')
+            required: 'Por favor, coloque seu telefone.',
+            minlength: 'Por favor, coloque um telefone válido.'
           },
           born: {
-            required: 'Qual é sua data de nascimento?',
-            minlength: jQuery.validator.format('Mínimo {0} números.')
+            required: 'Por favor, coloque sua data de nascimento.',
+            minlength: 'Por favor, coloque uma data válida'
           }
         },
         highlight: function(element, errorClass, validClass) {
@@ -222,7 +214,7 @@ var Atelier = {
 
           $.ajax({
             type: 'POST',
-            url: 'birthday.php',
+            url: 'processa.php',
             data: dados,
             dataType: 'text',
             cache: false,
@@ -283,25 +275,24 @@ var Atelier = {
           },
           born: {
             required: true,
-            minlength: 4
+            minlength: 8
           }
         },
         messages: {
           name: {
-            required: 'Qual é seu nome?',
-            minlength: jQuery.validator.format('Ele deve conter no mínimo {0} caracteres.')
+            required: 'Por favor, coloque seu nome.',
+            minlength: jQuery.validator.format('Seu nome deve consistir pelo menos {0} caracteres.')
           },
           email: {
-            required: 'Qual é seu e-mail?',
-            email: 'Por favor, insira um e-mail válido.'
+            required: 'Por favor, coloque um email válido!',
           },
           phone: {
-            required: 'Qual é seu telefone?',
-            minlength: jQuery.validator.format('Mínimo {0} números.')
+            required: 'Por favor, coloque seu telefone.',
+            minlength: 'Por favor, coloque um telefone válido.'
           },
           born: {
-            required: 'Qual é sua data de nascimento?',
-            minlength: jQuery.validator.format('Mínimo {0} números.')
+            required: 'Por favor, coloque sua data de nascimento.',
+            minlength: 'Por favor, coloque uma data válida'
           }
         },
         highlight: function(element, errorClass, validClass) {
@@ -315,7 +306,7 @@ var Atelier = {
 
           $.ajax({
             type: 'POST',
-            url: 'women.php',
+            url: 'processa.php',
             data: dados,
             dataType: 'text',
             cache: false,
@@ -376,25 +367,24 @@ var Atelier = {
           },
           born: {
             required: true,
-            minlength: 4
+            minlength: 8
           }
         },
         messages: {
           name: {
-            required: 'Qual é seu nome?',
-            minlength: jQuery.validator.format('Ele deve conter no mínimo {0} caracteres.')
+            required: 'Por favor, coloque seu nome.',
+            minlength: jQuery.validator.format('Seu nome deve consistir pelo menos {0} caracteres.')
           },
           email: {
-            required: 'Qual é seu e-mail?',
-            email: 'Por favor, insira um e-mail válido.'
+            required: 'Por favor, coloque um email válido!',
           },
           phone: {
-            required: 'Qual é seu telefone?',
-            minlength: jQuery.validator.format('Mínimo {0} números.')
+            required: 'Por favor, coloque seu telefone.',
+            minlength: 'Por favor, coloque um telefone válido.'
           },
           born: {
-            required: 'Qual é sua data de nascimento?',
-            minlength: jQuery.validator.format('Mínimo {0} números.')
+            required: 'Por favor, coloque sua data de nascimento.',
+            minlength: 'Por favor, coloque uma data válida'
           }
         },
         highlight: function(element, errorClass, validClass) {
@@ -408,7 +398,7 @@ var Atelier = {
 
           $.ajax({
             type: 'POST',
-            url: 'monthly.php',
+            url: 'processa.php',
             data: dados,
             dataType: 'text',
             cache: false,
@@ -439,6 +429,11 @@ var Atelier = {
         }
       });
     });
+  },
+  mask: function() {
+    'use strict';
+
+    $('.input-born').mask('00/00/0000');
   },
   facebook: function() {
     'use strict';
