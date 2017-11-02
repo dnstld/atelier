@@ -1,6 +1,6 @@
 # Atelier Cabeleireiros
 
-Website (wip)
+[Responsive Website (mobile-first)](http://ateliercabeleireiro.com.br/)<br />
 
 ## What I using?
 
