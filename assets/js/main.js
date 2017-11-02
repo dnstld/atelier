@@ -89,8 +89,7 @@ var Atelier = {
         { src: '../assets/images/salao/salao-08.jpg' },
         { src: '../assets/images/salao/salao-12.jpg' },
         { src: '../assets/images/salao/salao-13.jpg' },
-        { src: '../assets/images/salao/salao-20.jpg' },
-        { src: '../assets/images/salao/salao-23.jpg' }
+        { src: '../assets/images/salao/salao-20.jpg' }
       ],
       animation: 'kenburns'
     });
